@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* shared style */
+
+.display-flex {
+  display: flex;
+}
+.button-dark {
+  margin: 24px 0px;
+  padding: 10px 40px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  background: rgb(17, 17, 17);
+}
+
+/* navbar style */
+.navbar {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 100px;
+  gap: 150px;
+}
+.nav-item {
+  list-style: none;
+  margin-left: 30px;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+.nav-title {
+  color: rgb(17, 17, 17);
+  font-size: 32px;
+  font-weight: 700;
+  padding: 17px 0 15px 11px;
+}
+.nav-item1 {
+  color: rgb(254, 163, 1);
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-item2 {
+  color: rgb(1, 172, 253);
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-item3 {
+  color: rgb(5, 212, 223);
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-item4 {
+  color: rgb(93, 88, 239);
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-logo {
+  width: 100%;
+}
+.nav-btn {
+  padding: 14px 60px;
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+}
+/* banner style */
+.banner {
+  justify-content: space-between;
+  max-width: 1160px;
+  padding: 0px 100px;
+  gap: 50px;
+}
+.banner-heading {
+  margin-top: 110px;
+}
+.banner-title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 61px;
+}
+.banner-img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.orange {
+  color: rgb(254, 163, 1);
+}
+.sky-blue {
+  color: rgb(1, 172, 253);
+}
+.banner-description {
+  color: rgb(17, 17, 17);
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 576px){
+    .navbar{
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+    }
+    .nav-title{
+        visibility: hidden;
+    }
+    .nav-item, .nav-btn{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-title{
+        margin-top: 10px;
+    }
+
+}
