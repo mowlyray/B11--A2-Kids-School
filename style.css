@@ -100,7 +100,7 @@
 .banner {
   justify-content: space-between;
   align-items: center;
-  max-width: 1160px;
+  max-width: 1150px;
   padding: 0px 120px;
   gap: 50px;
 }
@@ -133,7 +133,7 @@
 .curriculum-container {
   margin: 80px 0px;
   gap: 28px;
-  max-width: 1160px;
+  max-width: 1150px;
   padding: 0px 120px;
 }
 .card {
@@ -219,7 +219,7 @@
   padding: 60px 0px;
 }
 .stories-container {
-  max-width: 1160px;
+  max-width: 1150px;
   padding: 0px 120px;
   gap: 18px;
   margin: 80px 0px;
@@ -293,6 +293,43 @@
 }
 .our-story-btn {
   margin: 50px 550px 20px;
+}
+/* footer style */
+footer {
+  background: rgb(1, 172, 253);
+  padding: 123px 100px 174px 140px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+.site-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.footer-title {
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+.footer-description {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+  word-spacing: 2px;
+}
+.footer-link {
+  margin: 30px;
+}
+.footer-link h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 /* responsive media query */
