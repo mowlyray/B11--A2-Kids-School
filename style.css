@@ -24,13 +24,36 @@
   border-radius: 12px;
   background: rgb(17, 17, 17);
 }
+main {
+  max-width: 1160px;
+  padding: 0px 120px;
+}
+.section-title {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.card-title {
+  color: rgb(32, 32, 32);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 30px 0px;
+}
+.card-description {
+  color: rgb(128, 128, 128);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0px 15px 33px 15px;
+  line-height: 28.3px;
+}
 
 /* navbar style */
 .navbar {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 100px;
+  padding: 20px 120px;
   gap: 150px;
 }
 .nav-responsive-menu {
@@ -47,7 +70,7 @@
 }
 .nav-title {
   color: rgb(17, 17, 17);
-  font-size: 32px;
+  font-size: 2.2rem;
   font-weight: 700;
   padding: 17px 0 15px 11px;
 }
@@ -88,11 +111,11 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1160px;
-  padding: 0px 100px;
+  padding: 0px 120px;
   gap: 50px;
 }
 .banner-title {
-  font-size: 45px;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 61px;
 }
@@ -107,28 +130,101 @@
 }
 .banner-description {
   color: rgb(17, 17, 17);
-  font-size: 17px;
+  font-size: 1.2rem;
   margin-top: 10px;
+}
+
+/* standard-curriculum-section-style */
+
+.curriculum-section {
+  background-image: url("assets/bg.png");
+  padding: 60px 0px;
+}
+.curriculum-container {
+  margin: 80px 0px;
+  gap: 28px;
+}
+.card {
+  border-radius: 18px;
+  height: 440px;
+  text-align: center;
+}
+.card > img {
+  margin-top: 65px;
+  width: 30%;
+}
+.card-1 {
+  border: 1px solid rgb(222, 245, 255);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to bottom, #def5ff 0%, white 40%);
+}
+.card-2 {
+  border: 1px solid rgb(255, 244, 220);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to bottom, #fff4dc 0%, white 40%);
+}
+.card-3 {
+  border: 0.94px solid rgb(242, 232, 255);
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to bottom, #f2e8ff 0%, white 40%);
+}
+.card a {
+  text-decoration: none;
+}
+.card1-text {
+  color: rgb(100, 200, 255);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28.3px;
+}
+.card2-text {
+  color: rgb(240, 170, 0);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28.3px;
+}
+.card3-text {
+  color: rgb(135, 0, 255);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28.3px;
+}
+.curriculum-arrow {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  background: rgb(254, 163, 1);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 900;
 }
 
 /* responsive media query */
 
- @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   /* navbar */
   nav {
     border-bottom: 1px solid rgb(254, 163, 1);
     padding: 12px 16px;
   }
-  .navbar{
+  .navbar {
     display: none;
   }
-  .nav-responsive-menu{
+  .nav-responsive-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem
+    font-size: 1.5rem;
   }
-  .nav-logo{
+  .nav-logo {
     width: 12%;
   }
   /* banner */
@@ -140,6 +236,6 @@
     margin-top: 20px;
   }
   .banner-title {
-   text-align: center;
+    text-align: center;
   }
 }
