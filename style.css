@@ -19,14 +19,10 @@
   margin: 24px 0px;
   padding: 10px 40px;
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 700;
   border-radius: 12px;
   background: rgb(17, 17, 17);
-}
-main {
-  max-width: 1160px;
-  padding: 0px 120px;
 }
 .section-title {
   text-align: center;
@@ -34,18 +30,12 @@ main {
   font-size: 2.5rem;
   font-weight: 700;
 }
-.card-title {
-  color: rgb(32, 32, 32);
-  font-size: 1.4rem;
+.story-sub-title {
+  color: rgb(0, 0, 0);
+  font-size: 0.9rem;
   font-weight: 700;
-  margin: 30px 0px;
-}
-.card-description {
-  color: rgb(128, 128, 128);
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 0px 15px 33px 15px;
-  line-height: 28.3px;
+  line-height: 28.76px;
+  padding: 20px 4px 30px 25px;
 }
 
 /* navbar style */
@@ -143,6 +133,8 @@ main {
 .curriculum-container {
   margin: 80px 0px;
   gap: 28px;
+  max-width: 1160px;
+  padding: 0px 120px;
 }
 .card {
   border-radius: 18px;
@@ -167,6 +159,19 @@ main {
   border: 0.94px solid rgb(242, 232, 255);
   box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
   background-image: linear-gradient(to bottom, #f2e8ff 0%, white 40%);
+}
+.card-title {
+  color: rgb(32, 32, 32);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 30px 0px;
+}
+.card-description {
+  color: rgb(128, 128, 128);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0px 15px 33px 15px;
+  line-height: 28.3px;
 }
 .card a {
   text-decoration: none;
@@ -203,8 +208,91 @@ main {
   align-items: center;
   justify-content: center;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 900;
+}
+
+/* stories style */
+.stories-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(254, 163, 1, 0.3)),
+    url("./assets/bg.png");
+  padding: 60px 0px;
+}
+.stories-container {
+  max-width: 1160px;
+  padding: 0px 120px;
+  gap: 18px;
+  margin: 80px 0px;
+}
+.story-1 {
+  border-radius: 1rem;
+  background: rgb(255, 255, 255);
+  height: 630.52px;
+  width: 520px;
+}
+.story1-img {
+  border-radius: 16px 16px 0px 0px;
+  width: 100%;
+}
+.story1-title {
+  color: rgb(32, 32, 32);
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 30px 38px;
+}
+.story1-description {
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 12px 80px 34px 38px;
+  word-spacing: 1px;
+}
+
+.story1-btn {
+  background: #3cd8e8;
+  border: none;
+  border-radius: 47px;
+  padding: 14px 20px;
+  font-size: 15px;
+  color: white;
+  position: relative;
+  bottom: 5%;
+  left: 5%;
+}
+.stories-sub-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.other-story {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  width: 240px;
+}
+.other-story-img {
+  width: 100%;
+}
+.other-story-btn {
+  border: none;
+  border-radius: 47px;
+  padding: 9px 18px 10px 19px;
+  font-size: 0.8rem;
+  color: white;
+  position: relative;
+  bottom: 5%;
+  left: 5%;
+  font-weight: 500;
+}
+.story-2 button,
+.story-4 button,
+.story-5 button {
+  background: rgb(149, 178, 38);
+}
+.story-3 button {
+  background: rgb(93, 88, 240);
+}
+.our-story-btn {
+  margin: 50px 550px 20px;
 }
 
 /* responsive media query */
