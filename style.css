@@ -330,6 +330,31 @@ footer {
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
   font-weight: 700;
+  margin-bottom: 15px;
+}
+.footer-link li {
+  list-style: none;
+}
+.footer-link > ul > li {
+  margin-bottom: 20px;
+}
+.footer-link > ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.footer-media {
+  margin: 30px;
+}
+.footer-media > h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.media-img {
+  gap: 10px;
 }
 
 /* responsive media query */
@@ -360,7 +385,9 @@ footer {
   .banner-img {
     margin-top: 20px;
   }
-  .banner-title {
+  .banner-title,  .banner-description {
     text-align: center;
+    
   }
+ 
 }
