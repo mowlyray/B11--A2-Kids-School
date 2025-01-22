@@ -41,7 +41,6 @@
   color: rgb(0, 0, 0);
   font-size: 0.9rem;
   font-weight: 700;
-  line-height: 28.76px;
   padding: 20px 4px 30px 25px;
 }
 
@@ -304,7 +303,7 @@
   background: rgb(93, 88, 240);
 }
 .our-story-btn {
-  margin: 50px 550px 20px;
+  text-align: center;
 }
 
 /* footer style */
@@ -423,21 +422,58 @@ footer {
   .button-dark {
     padding: 10px 24px;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 12px;
   }
   /* curruculam-section */
-  .curriculum-section {
-  }
   .section-title {
     font-size: 26px;
   }
-  .curriculum-container {
-    flex-direction: column;
-  }
-  .card {
-    width: 100%;
-  }
-  .curriculum-arrow {
+  .curriculum-arrow,
+  .story-1 {
     display: none;
   }
+  .curriculum-container {
+    padding: 0px;
+    flex-direction: column;
+    margin: 25px 18px;
+  }
+  .stories-container,
+  .stories-section, footer {
+    padding: 0px;
+  }
+  .stories-container {
+    margin: 0px;
+    padding-top: 40px;
+  }
+  .stories-sub-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 14px;
+  }
+  .other-story {
+    width: 100%;
+  }
+  .other-story-btn {
+    border-radius: 28px;
+    padding: 6px 10px;
+    font-size: 8px;
+    bottom: 10%;
+    left: 10%;
+  }
+  .story-sub-title {
+    font-size: 9px;
+    font-weight: bold;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 25px;
+    gap: 30px;
+  }
+  .footer-description {
+    font-size: 14px;
+  }
+  .footer-link, .footer-media{
+    margin: 0px;
+  }
+  
 }
